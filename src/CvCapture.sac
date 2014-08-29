@@ -1,0 +1,29 @@
+class CvCapture;
+
+extern classtype;
+
+export all;
+
+extern CvCapture cvCaptureFromFile( string filename);
+#pragma linkwith "opencvlib"
+#pragma linksign [ 0,1]
+
+extern double cvGetFrameHight( CvCapture &capture);
+#pragma linkobj "src/cvcapture.o"
+#pragma linksign [ 0,1]
+
+extern double cvGetFrameWidth( CvCapture &capture);
+#pragma linkobj "src/cvcapture.o"
+#pragma linksign [ 0,1]
+
+extern double cvGetFrameCount( CvCapture &capture);
+#pragma linkobj "src/cvcapture.o"
+#pragma linksign [ 0,1]
+
+extern IPLimage::IplImage cvQueryFrame( CvCapture &capture);
+#pragma linkwith "opencvlib"
+#pragma linksign [ 0,1]
+
+extern void cvReleaseCapture( CvCapture capture);
+#pragma linkwith "opencvlib"
+

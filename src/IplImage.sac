@@ -1,0 +1,11 @@
+module IplImage;
+
+export all;
+
+external typedef IplImage;
+
+extern RGB::rgb[.,.] IplImage2Rgb( IplImage img);
+#pragma linkobj "src/iplimage.o"
+#pragma linksign [2,1]
+#pragma refcounting [0]
+
