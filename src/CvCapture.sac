@@ -20,7 +20,7 @@ extern double cvGetFrameCount( CvCapture &capture);
 #pragma linkobj "src/cvcapture.o"
 #pragma linksign [ 0,1]
 
-extern IPLimage::IplImage cvQueryFrame( CvCapture &capture);
+extern IplImage::IplImage cvQueryFrame( CvCapture &capture);
 #pragma linkwith "opencvlib"
 #pragma linksign [ 0,1]
 
